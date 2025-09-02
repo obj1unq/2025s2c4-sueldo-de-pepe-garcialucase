@@ -88,3 +88,15 @@ object bonoPorPresentismoNulo {
         return 0
     }
 }
+
+object sofia {
+    var property categoria = cadete
+    var property bonoResultado = bonoPorResultadoMontoFijo
+
+    method neto() = categoria.neto() * 1.3
+
+    method sueldo () = self.neto() + bonoResultado.monto(self.neto())
+}
+
+
+
